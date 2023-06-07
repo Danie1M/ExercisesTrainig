@@ -38,3 +38,23 @@ libro = function descripcion() {
 console.log(libro)
 
 /// 8.-
+
+
+/// 9.-
+let carro = {
+    color:"Rojo",
+    marca:"Ford",
+    modelo:2015,
+    pickup:false,
+    accesorios:{
+        bolsaAire: true,
+        rines:"deportivos",
+        sistemaFrenado:"ABS"
+    }
+}
+console.log(carro.accesorios?.bolsaAire)  /// true 
+console.log(carro.detalles?.dimension)    /// undefined
+
+/// 10.-
+carro.accesorios.bolsaAire = null
+console.log(carro.accesorios.bolsaAire??="No agregado")
